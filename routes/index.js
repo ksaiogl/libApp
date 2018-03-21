@@ -3,9 +3,6 @@ var router = express.Router();
 var fs = require('fs');
 var os = require('os');
 
-
-var folderSuffix = os.hostname() + '-' + instanceId;
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   var ip = req.header('x-forwarded-for') || req.connection.remoteAddress;
